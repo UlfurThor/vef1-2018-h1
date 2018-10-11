@@ -20,5 +20,8 @@
   "devDependencies": {
     "browser-sync": "^2.26.0",
     "node-sass": "^4.9.3"
+  },
+  "dependencies": {
+    "stylelint-config-primer": "^2.2.10"
   }
 }
