@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "browser-sync": "browser-sync start --server --files index.html styles.css pages *.html",
-    "sass": "node-sass --source-map-embed styles.scss styles.css -w",
+    "browser-sync": "browser-sync start --server --files index.html headder-footer.html styles.css pages *.html",
+    "sass": "node-sass --source-map-embed styles.scss styles.css scss/*.scss -w",
     "sass-watch": "node-sass --source-map-embed --watch --recursive styles.scss styles.css",
     "dev": "npm-run-all --parallel sass-watch  browser-sync"
   },

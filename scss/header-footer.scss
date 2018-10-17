@@ -1,0 +1,29 @@
+@import "scss/config";
+.grid__row {
+    display: flex;
+    flex-direction: column;
+    margin-left: -10px;
+    margin-right: -10px;
+  }
+  
+  .grid__col {
+    width: 100%;
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+
+  .header__elem{
+      
+  }
+  
+  header {
+    margin: 0 auto;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: $color-headerGreen;
+  }
+
+  footer { 
+       
+    background-color: $color-footerPink;
+  }
