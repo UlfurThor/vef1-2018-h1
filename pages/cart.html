@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Vöruhúsið</title>
+
+  <link rel="stylesheet" href="grid.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+
+<body>
+    <main>
+        
+        <section>
+            <h2>Vörur í körfu</h2>
+        </section>
+
+        <section>
+            <img src=../img/watch.jpg>
+            <h2>Ótrúlegt úr</h2>
+            <p>Hvað er Klukkan? Þetta úr mun svara því hvenær sem er.</p>
+            <p>99.900 kr.-</p>
+            <form>
+                <label for="fjoldi">Fjöldi</label>
+                <input type="text" id="fjoldi" placeholder="0">
+                <input type="submit" value="Uppfæra">
+                <input type="submit" value="Eyða úr körfu">
+            </form>
+        </section>
+        
+        <section>
+            <img src="../img/headphones.jpg">
+            <h2>Hágæða heyrnatól</h2>
+            <p>Þú munt ekki heyra neitt nema hágæða tónlist með þessum hágæða heyrnartólum. Höfum við minnst á að þau eru hágæða?</p>
+            <p>Fjöldi</p>
+            <form>
+                <label for="fjoldi">Fjöldi</label>
+                <input type="text" id="fjoldi" placeholder="0">
+                <input type="submit" value="uppfæra">
+                <input type="submit" value="eyða úr körfu">
+            </form>
+        </section>
+
+        <section>
+            <h2>Sendingarupplýsingar</h2>
+            <form>
+                <label for="name">Nafn:</label>
+                <input type="text" id="name">
+                <label for="address">Heimilisfang:</label>
+                <input type="text" id="address">
+                <label for="zipcode">Póstnúmer</label>
+                <input type="number" id="zipcode" placeholder="-Velja póstnúmer-" min="101" max="999" step="1">
+            </form>
+        </section>
+
+        <section>
+            <h2>Greiðsluupplýsingar</h2>
+            <form>
+                <label for="cardnumber">Kortanúmer</label>
+                <input type="text" id="cardnumber">
+                <label for="cardholder">Korthafi</label>
+                <input type="text" id="cardholder">
+                <p>Gildistími</p>
+                <label for="expirydate-month">Mán</label>
+                <input type="number" id="expirydate-month" placeholder="1"  min="1" max="12" step="1">
+                <label for="expirydate-year">Gildistími</label>
+                <input type="number" id="expirydate-year" placeholder="2018" min="2018" max="3000" step="1">
+            </form>
+        </section>
+
+    </main>
+
+</body>
+
+</html>
