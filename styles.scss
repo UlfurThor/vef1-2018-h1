@@ -11,15 +11,24 @@
   box-sizing: inherit;
 }
 
-html { /* stylelint-disable-line */
+html { 
+  /* stylelint-disable-line */
   box-sizing: border-box;
   overflow-x: hidden;
+  font-size: 16px;
 
   // TODO fleiri grunn stillingar
-  
+}
+main {
+  margin: 0 auto;
+  max-width: 1450px;
+  padding-left: $gutter;
+  padding-right: $gutter;
 }
 
 
 
+
+
 // TODO sækja allar sass skrár
-//@import "scss/...";
+@import "scss/header-footer.scss";
