@@ -1,7 +1,28 @@
 // TODO stillingar hér
+
+$base : 16px;
+
+$s60-font: $base * (60 / 16);
+
 $gutter: 20px;
 $halfGutter: $gutter/2;
+// colSize
+$s12-col: 100%;
+$s6-col: $s12-col/2;
+$s4-col: $s12-col/3;
+$s3-col: $s12-col/4;
+$s2-col: $s12-col/6;
+$s1-col: $s12-col/12;
 
 
+
+// color setings
 $color-headerGreen: #afb281;
 $color-footerPink: #cc9694;
+$color-black:#000000;
+$color-white:#ffffff;
+$color-blue:#cee8ff;
+$color-yelow:#fcffd2;
+
+// fonts
+
