@@ -1,0 +1,85 @@
+@import "scss/config";
+
+header {
+  margin: 0 auto;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 20px;
+  padding-right: 20px;
+  background-color: $color-headerGreen;
+  font-family: 'Oswald', Verdana, serif;
+}
+
+.header {
+  &__row {
+    display: flex;
+    flex-direction: column;
+
+    //background-color: red;
+    justify-content: center;
+
+    &__title {
+      text-align: center;
+      font-size: $s60-font;
+      //background-color: orange;
+    }
+
+    &__links {
+      display: flex;
+      flex-direction: column;
+      //background-color: yellow;
+      
+
+      &__block {
+        width: 100%;
+        //border: 1px solid black;
+        padding-bottom: 1rem;
+
+        &.hd__spacer {
+          //height: 20px;
+          //background-color: lightcoral;
+        }
+        
+        &.hd__pages {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-around;
+          text-decoration: none;
+          
+          //background-color: aqua;
+          //text-align: center;
+          a {
+            color: $color-black;
+            text-decoration: none; 
+          }
+          a:hover {
+            color: $color-black;
+            text-decoration: underline;
+          }
+          .curentPage{
+            text-decoration: underline;
+          }
+        }
+        
+        &.hd__cart {
+          display: flex;
+          flex-direction: row;
+          justify-content: flex-end;
+          img{
+            width: 1rem;
+          }
+          a {
+            color: $color-black;
+            text-decoration: none; 
+          }
+          a:hover {
+            color: $color-black;
+            border-bottom: 2px solid black;
+          }
+        }
+
+      }
+    }
+  }
+
+}

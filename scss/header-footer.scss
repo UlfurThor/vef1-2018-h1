@@ -1,29 +1,76 @@
 @import "scss/config";
-.grid__row {
+
+
+
+h1 {
+  text-align: center;
+  margin: 20px 0;
+  background-color: blue;
+}
+
+
+
+
+header {
+  margin: 0 auto;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 20px;
+  padding-right: 20px;
+  background-color: $color-headerGreen;
+}
+
+.hd {
+  &__links__rows {
     display: flex;
     flex-direction: column;
     margin-left: -10px;
     margin-right: -10px;
+    background-color: orange;
   }
-  
-  .grid__col {
+
+  &__row {
+    display: flex;
+    flex-direction: column;
+    margin-left: -10px;
+    margin-right: -10px;
+    background-color: red;
+  }
+
+  &__col {
     width: 100%;
     padding-right: 10px;
     padding-left: 10px;
+    background-color: orange;
   }
 
-  .header__elem{
-      
-  }
-  
-  header {
-    margin: 0 auto;
-    padding-left: 20px;
-    padding-right: 20px;
-    background-color: $color-headerGreen;
+  &__elem {
+    background-color: purple;
   }
 
-  footer { 
-       
-    background-color: $color-footerPink;
+  &__title {
+    text-align: center;
+    background-color: gray;
   }
+
+  &__spacer {
+    height: 10px;
+    background-color: black;
+  }
+
+  &__links {
+    &__column {
+      width: 100%;
+      padding-right: 10px;
+      padding-left: 10px;
+      background-color: orchid;
+      text-align: center;
+    }
+  }
+}
+
+
+footer {
+
+  background-color: $color-footerPink;
+}

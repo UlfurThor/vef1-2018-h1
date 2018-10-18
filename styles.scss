@@ -15,13 +15,14 @@ html {
   /* stylelint-disable-line */
   box-sizing: border-box;
   overflow-x: hidden;
+  font-family: 'Open Sans', helvetica, arial, sans-serif;
   font-size: 16px;
 
   // TODO fleiri grunn stillingar
 }
 main {
   margin: 0 auto;
-  max-width: 1450px;
+  max-width: 1200;
   padding-left: $gutter;
   padding-right: $gutter;
 }
@@ -31,4 +32,5 @@ main {
 
 
 // TODO sækja allar sass skrár
-@import "scss/header-footer.scss";
+@import "scss/header.scss";
+@import "scss/footer.scss";
