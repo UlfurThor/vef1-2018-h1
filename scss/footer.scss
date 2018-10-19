@@ -6,3 +6,28 @@ footer {
 
   background-color: $color-footerPink;
 }
+
+.footer {
+  margin: 0 auto;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  padding-left: $gutter;
+  padding-right: $gutter;
+  max-width: 1200px;
+
+  @media (min-width: 1200px) {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  &__row {
+    display: flex;
+    //flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    &__column{
+      width: 50%;
+    }
+  }
+}
