@@ -1,8 +1,15 @@
 // TODO stillingar hér
 
 $base : 16px;
-
-$s60-font: $base * (60 / 16);
+$f12: $base * (12 / 16);
+$f14: $base * (14 / 16);
+$f16: $base * (16 / 16);
+$f18: $base * (18 / 16);
+$f21: $base * (21 / 16);
+$f24: $base * (24 / 16);
+$f36: $base * (36 / 16);
+$f48: $base * (48 / 16);
+$f60: $base * (60 / 16);
 
 $gutter: 20px;
 $halfGutter: $gutter/2;
@@ -25,4 +32,5 @@ $color-blue:#cee8ff;
 $color-yelow:#fcffd2;
 
 // fonts
-
+$body-font-stack:    'Open Sans', helvetica, arial, sans-serif;
+$heading-font-stack:    'Oswald', Verdana, serif;
