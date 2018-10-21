@@ -21,8 +21,12 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    margin-left: -10px;
+    margin-right: -10px;
 
     &__title {
+      padding-left: 10px;
+      padding-right: 10px;
       font-family: $heading-font-stack;
       text-align: center;
       font-size: $f60;
@@ -30,6 +34,8 @@ header {
     }
 
     &__links {
+      padding-left: 10px;
+      padding-right: 10px;
       display: flex;
       flex-direction: column;
 
@@ -52,9 +58,20 @@ header {
           width: $s4-col;
         }
 
+        // animation for link color
+        a {
+          color: $color-black;
+          text-decoration: none;
+          transition: color 0.3s ease-in-out;
+        }
+
+        a:hover {
+          color: $color-blue;
+
+        }
+
         &.hd__spacer {
-          //height: 20px;
-          //background-color: lightcoral;
+          //empty spacer for controling postition
         }
 
         &.hd__pages {
@@ -63,6 +80,15 @@ header {
           flex-direction: row;
           justify-content: space-around;
           text-decoration: none;
+          font-weight: bold;
+
+          @media (max-width: 400px) {
+            // dirty litle trico to make sure
+            // that the text does not flow
+            // of the page under 400px
+            flex-direction: column;
+            text-align: center;
+          }
 
           @media (min-width: 800px) {
             width: $s6-col;
@@ -73,15 +99,7 @@ header {
             width: $s4-col;
           }
 
-          a {
-            color: $color-black;
-            text-decoration: none;
-          }
 
-          a:hover {
-            color: $color-black;
-            text-decoration: underline;
-          }
 
           .curentPage {
             text-decoration: underline;
@@ -104,15 +122,7 @@ header {
             height: 1em;
           }
 
-          a {
-            color: $color-black;
-            text-decoration: none;
-          }
 
-          a:hover {
-            color: $color-black;
-            border-bottom: 2px solid black;
-          }
         }
 
       }
