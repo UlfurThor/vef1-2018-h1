@@ -21,8 +21,12 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    margin-left: -10px;
+    margin-right: -10px;
 
     &__title {
+      padding-left: 10px;
+      padding-right: 10px;
       font-family: $heading-font-stack;
       text-align: center;
       font-size: $f60;
@@ -30,6 +34,8 @@ header {
     }
 
     &__links {
+      padding-left: 10px;
+      padding-right: 10px;
       display: flex;
       flex-direction: column;
 
@@ -65,8 +71,7 @@ header {
         }
 
         &.hd__spacer {
-          //height: 20px;
-          //background-color: lightcoral;
+          //empty spacer for controling postition
         }
 
         &.hd__pages {
@@ -76,6 +81,14 @@ header {
           justify-content: space-around;
           text-decoration: none;
           font-weight: bold;
+
+          @media (max-width: 400px) {
+            // dirty litle trico to make sure
+            // that the text does not flow
+            // of the page under 400px
+            flex-direction: column;
+            text-align: center;
+          }
 
           @media (min-width: 800px) {
             width: $s6-col;

@@ -1,9 +1,10 @@
 @import "scss/config";
 
-
+//TODO fiddle with spacing / fontsize
 
 footer {
-
+  padding-top: $f16;
+  padding-bottom: $f16;
   background-color: $color-footerPink;
 }
 
@@ -22,12 +23,43 @@ footer {
 
   &__row {
     display: flex;
-    //flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
+    margin-left: -10px;
+    margin-right: -10px;
 
-    &__column{
-      width: 50%;
+    &__column {
+
+      padding-left: 10px;
+      padding-right: 10px;
+      width: $s6-col;
+
+      display: flex;
+      flex-direction: column;
+      line-height: 2em;
+
+      @media (min-width: 1000px) {
+        width: $s3-col;
+      }
+
+      h3 {
+        color: $color-black;
+      }
+
+      a {
+        color: $color-yelow;
+        text-decoration: none;
+        transition: color 0.3s ease-in-out;
+      }
+
+      a:hover {
+        color: $color-blue;
+
+      }
     }
+  }
+
+  &__copyright {
+    margin-top: $f16;
+    text-align: center;
   }
 }
