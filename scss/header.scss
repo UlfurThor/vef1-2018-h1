@@ -52,6 +52,18 @@ header {
           width: $s4-col;
         }
 
+        // animation for link color
+        a {
+          color: $color-black;
+          text-decoration: none;
+          transition: color 0.3s ease-in-out;
+        }
+
+        a:hover {
+          color: $color-blue;
+
+        }
+
         &.hd__spacer {
           //height: 20px;
           //background-color: lightcoral;
@@ -63,6 +75,7 @@ header {
           flex-direction: row;
           justify-content: space-around;
           text-decoration: none;
+          font-weight: bold;
 
           @media (min-width: 800px) {
             width: $s6-col;
@@ -73,15 +86,7 @@ header {
             width: $s4-col;
           }
 
-          a {
-            color: $color-black;
-            text-decoration: none;
-          }
 
-          a:hover {
-            color: $color-black;
-            text-decoration: underline;
-          }
 
           .curentPage {
             text-decoration: underline;
@@ -104,15 +109,7 @@ header {
             height: 1em;
           }
 
-          a {
-            color: $color-black;
-            text-decoration: none;
-          }
 
-          a:hover {
-            color: $color-black;
-            border-bottom: 2px solid black;
-          }
         }
 
       }
