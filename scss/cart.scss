@@ -1,7 +1,76 @@
-.cartcard {
-  max-width: 10px;
+@import "scss/config";
+
+@mixin title {
+  margin-bottom: $gutter;
+
+  font-family: $heading-font-stack;
+  font-size: $f36;
 }
 
-.cartcard__image{
+@mixin price {
+  margin-top: $gutter;
+  margin-bottom: $halfGutter;
+  font-family: $heading-font-stack;
+  font-size: $f24;
+  font-weight: 700;
+}
 
+
+
+
+.product {
+  &__col {
+    padding-left: 10px;
+    padding-right: 10px;
+    width: $s12-col;
+      &__img {
+        @media (min-width: 800px) {
+          width:$s4-col;
+        }
+      }
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+  }
+
+  &__row {
+    display: flex;
+    flex: wrap;
+    flex-direction: column;
+    margin-left: -10px;
+    margin-right: -10px;
+    margin-bottom: 2*$gutter;
+    @media (min-width: 800px) {
+     // flex-direction: row;
+    }
+  }
+
+  &__shippay {
+    display: flex;
+    flex-direction: column;
+    flex: wrap;
+    justify-content: space-between;
+    @media (min-width: 800px) {
+      width:$s12-col;
+    
+    &__field {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: $Gutter;
+    }
+  }
+
+  &__image {
+    max-width: 100%;
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+
+  &__title {
+    @include title;
+  }
+
+  &__price {
+    @include price;
+  }
 }
