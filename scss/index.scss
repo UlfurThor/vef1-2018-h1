@@ -1,0 +1,48 @@
+@import "scss/config";
+
+main {
+  max-width: 1200px;
+}
+
+.main {
+
+  &__row {
+    margin-left: -10px;
+    margin-right: -10px;
+    display: flex;
+    flex-wrap: wrap;
+
+    &__column {
+      padding-left: 10px;
+      padding-right: 10px;
+      width: $s12-col;
+
+      &__content {
+        margin-left: -10px;
+        margin-right: -10px;
+        display: flex;
+        flex-wrap: wrap;
+
+        &.cont_rev {
+          flex-direction: row-reverse;
+          //background-color: red;
+        }
+        
+        &__items {
+          padding-left: 10px;
+          padding-right: 10px;
+          width: $s12-col;
+
+
+
+          img {
+            max-width: 100%;
+            
+          }
+        }
+      }
+    }
+  }
+
+
+}

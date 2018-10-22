@@ -11,7 +11,7 @@
   box-sizing: inherit;
 }
 
-html { 
+html {
   /* stylelint-disable-line */
   box-sizing: border-box;
   overflow-x: hidden;
@@ -20,11 +20,17 @@ html {
 
   // TODO fleiri grunn stillingar
 }
+
 main {
   margin: 0 auto;
   max-width: 1200;
   padding-left: $gutter;
   padding-right: $gutter;
+
+  @media (min-width: 1200px) {
+    padding-left: 0;
+    padding-right: 0;
+  }
 }
 
 // TODO sækja allar sass skrár
@@ -32,3 +38,4 @@ main {
 @import "scss/footer";
 @import "scss/cart";
 @import "scss/button";
+@import "scss/index";
