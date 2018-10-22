@@ -27,17 +27,37 @@ main {
           flex-direction: row-reverse;
           //background-color: red;
         }
-        
+
         &__items {
           padding-left: 10px;
           padding-right: 10px;
           width: $s12-col;
 
-
+          @media (min-width: 800px) {
+            padding-left: 0;
+            width: $s6-col;
+          }
 
           img {
             max-width: 100%;
-            
+          }
+
+          button {
+            width: 200px;
+            max-width: 100%;
+            padding: $f14; //todo set pading
+            background-color: $color-footerPink;
+            border: 0px solid transparent;
+            border-radius: 5px;
+
+            transition: color 0.3s ease-in-out;
+            transition: background-color 0.3s ease-in-out;
+
+          }
+
+          button:hover {
+            color: $color-footerPink;
+            background-color: $color-black;
           }
         }
       }
