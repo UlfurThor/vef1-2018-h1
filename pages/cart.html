@@ -31,67 +31,109 @@
     </div>
   </header>
   <main>
-               <section class="cartcard">
-                <div class="cardcard__image">
-                    <img src=../img/watch.jpg>
-                </div>
+      <h2 class="product__title">Vörur í körfu</h2>
 
-                <h2 class = "cartcard__title">Ótrúlegt úr</h2>
-                <p>Hvað er Klukkan? Þetta úr mun svara því hvenær sem er.</p>
-                <p class="product__price">99.900 kr.-</p>
-                
-                
-                <form class="product__form">
-                    <label for="fjoldi">Fjöldi</label>
-                    <input type="text" id="fjoldi" placeholder="0">
-                    <input type="submit" value="Uppfæra">
-                    <input type="submit" value="Eyða úr körfu">
-                </form>
-            </section>
-            
-            <section class="product">
-                <div class="product__image">
-                    <img src="../img/headphones.jpg">
-                </div>
-                <h2 class="product__title">Hágæða heyrnatól</h2>
-                <p>Þú munt ekki heyra neitt nema hágæða tónlist með þessum hágæða heyrnartólum. Höfum við minnst á að þau eru hágæða?</p>
-                <form class = "product__form">
-                    <label for="fjoldi">Fjöldi</label>
-                    <input type="text" id="fjoldi" placeholder="0">
-                    <input type="submit" value="uppfæra">
-                    <input type="submit" value="eyða úr körfu">
-                </form>
-            </section>
+      <div class="product__row">
+        <div class="product__col__img">
+          <img class="product__image" src="../img/watch.jpg">
+        </div>
+        
+        <div class="product__col">
+          
+            <div class="product__description">            
+              <h2 class = "product__title">Ótrúlegt úr</h2>
+              <p class="product__text">Hvað er Klukkan? Þetta úr mun svara því hvenær sem er.</p>
+            </div>
 
-            <section class="product">
-                <h2 class="product__title">Sendingarupplýsingar</h2>
-                <form class="product__form">
-                    <label for="name">Nafn:</label>
-                    <input type="text" id="name">
-                    <label for="address">Heimilisfang:</label>
-                    <input type="text" id="address">
-                    <label for="zipcode">Póstnúmer</label>
-                    <input type="number" id="zipcode" placeholder="-Velja póstnúmer-" min="101" max="999" step="1">
-                </form>
-            </section>
+            <div class="product__buy">
+              <p class="product__price">99.900 kr.-</p>      
+              <form class="product__form">
+                <p><label for="fjoldi">Fjöldi:</label></p>
+                <input type="text" id="fjoldi" placeholder="0">
+                <button><img src="../img/cart.svg">Uppfæra</button>
+                <button><img src="../img/cart.svg">Eyða úr körfu</button>
+              </form>
+            </div>
+          </div>
+     
+          </div>
+         
+         
+      </div>
 
-            <section class="product">
-                <h2 class="product__title">Greiðsluupplýsingar</h2>
-                <form class="product__form">
-                    <label for="cardnumber">Kortanúmer</label>
-                    <input type="text" id="cardnumber">
-                    <label for="cardholder">Korthafi</label>
-                    <input type="text" id="cardholder">
-                    <p>Gildistími</p>
-                    <label for="expirydate-month">Mán</label>
-                    <input type="number" id="expirydate-month" placeholder="1"  min="1" max="12" step="1">
-                    <label for="expirydate-year">Gildistími</label>
-                    <input type="number" id="expirydate-year" placeholder="2018" min="2018" max="3000" step="1">
-                </form>
-            </section>
-        <div>
-    </main>
-  </main>
+      <div class="product__row">
+        <div class="product__col__img">
+          <img class="product__image" src="../img/headphones.jpg">
+        </div>
+          
+        <div class="product__col">
+          <div class="product__description"> 
+          <h2 class="product__title">Hágæða heyrnatól</h2>
+          <p>Þú munt ekki heyra neitt nema hágæða tónlist með þessum hágæða heyrnartólum. Höfum við minnst á að þau eru hágæða?</p>
+        </div>
+
+
+          <div class="product__buy">
+          <p class="product__price">39.900 kr-</p>
+                    <form class = "product__form">
+            <p><label for="fjoldi">Fjöldi:</label></p>
+            <input type="text" id="fjoldi" placeholder="0">
+            <button><img src="../img/cart.svg"> Uppfæra</button>
+            <button><img src="../img/cart.svg">Eyða úr körfu</button>
+          </form>
+        </div>
+      </div>
+      </div>
+      
+      <div class="product__row">
+        <section class="product__col__shippay">
+          <h2 class="product__title">Sendingarupplýsingar</h2>
+          <form class="product__shippay">
+            <div class="product__shippay__field">
+              <label for="name">Nafn:</label>
+              <input type="text" id="name">
+            </div>
+            <div class="product__shippay__field">
+              <label for="address">Heimilisfang:</label>
+              <input type="text" id="address">
+            </div>
+            <div class="product__shipbuy__field">
+              <label for="zipcode">Póstnúmer</label>
+              <input type="number" id="zipcode" placeholder="-Velja póstnúmer-" min="101" 
+              max="999" step="1">
+            </div>
+          </form>
+     </section>
+      
+     <section class="product__col__shipbuy">
+      <h2 class="product__title">Greiðsluupplýsingar</h2>
+      <form class="product__shippay">
+        <div class="product__shippay__field">
+          <label for="cardnumber">Kortanúmer</label>
+          <input type="text" id="cardnumber">
+        </div>
+        <div class="product__shippay__field">
+          <label for="cardholder">Korthafi</label>
+          <input type="text" id="cardholder">
+        </div>
+        <div class=product__shippay__field>
+          <p>Gildistími</p>
+
+          <div class="expiry__date">
+            <label for="expirydate-month">Mán</label>
+            <input type="number" id="expirydate-month" placeholder="1"  min="1" max="12" step="1">
+            <label for="expirydate-year">Gildistími</label>
+            <input type="number" id="expirydate-year" placeholder="2018" min="2018" max="3000" step="1">
+          </div>
+        </div>
+      </form>
+    </section>
+    <div class="product__row">
+
+  
+</main>
+
+
   <footer>
     <div class="footer">
       <div class="footer__row">
