@@ -1,8 +1,8 @@
 @import "scss/config";
 
+
 @mixin title {
   margin-bottom: $gutter;
-
   font-family: $heading-font-stack;
   font-size: $f36;
 }
@@ -15,62 +15,82 @@
   font-weight: 700;
 }
 
+.button--middle {
 
-
+}
 
 .product {
-  &__col {
-    padding-left: 10px;
-    padding-right: 10px;
-    width: $s12-col;
-      &__img {
-        @media (min-width: 800px) {
-          width:$s4-col;
-        }
-      }
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-  }
-
-  &__row {
-    display: flex;
-    flex: wrap;
-    flex-direction: column;
-    margin-left: -10px;
-    margin-right: -10px;
-    margin-bottom: 2*$gutter;
-    @media (min-width: 800px) {
-     // flex-direction: row;
-    }
-  }
+  max-width: 1200px;
 
   &__shippay {
-    display: flex;
+    display:flex;
     flex-direction: column;
-    flex: wrap;
-    justify-content: space-between;
-    @media (min-width: 800px) {
-      width:$s12-col;
+    
+    
     
     &__field {
+      
       display: flex;
+      padding-top: $gutter;
+      margin-bottom: $gutter;
       justify-content: space-between;
-      margin-bottom: $Gutter;
     }
-  }
-
-  &__image {
-    max-width: 100%;
-    padding-right: 10px;
-    padding-left: 10px;
   }
 
   &__title {
     @include title;
   }
-
   &__price {
     @include price;
+  }
+
+  &__image {
+    width: 100%;
+    padding-right: 10px;
+    padding-left: 10px;
+ 
+  }
+
+  &__row {
+    display: flex;
+    flex-wrap:wrap;
+    margin-right: -10px;
+    margin-bottom: 2*$gutter;
+    margin-left: -10px;
+    // @media (min-width: 800px) {}
+  }
+
+  &__col {
+    width: 100%;
+    padding-right: 10px;
+    padding-left: 10px;
+
+    &__img {
+      @media (min-width: 800px) {
+        width: $s4-col;
+      }
+    }
+
+    &__card {
+      padding-right: 10px;
+      padding-left: 10px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      @media (min-width: 800px) {
+        width: $s8-col;
+      }
+    }
+
+    &__shippay {
+      width: $s12-col;
+      padding-right: 10px;
+      padding-left: 10px;
+      @media (min-width: 800px) {
+        width: $s6-col;
+      }
+    }
+
+    
   }
 }

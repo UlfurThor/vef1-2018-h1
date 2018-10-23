@@ -30,43 +30,36 @@
       </div>
     </div>
   </header>
-  <main>
-      <h2 class="product__title">Vörur í körfu</h2>
+  <main class="product">
+    <h2 class="product__title">Vörur í körfu</h2>
 
-      <div class="product__row">
-        <div class="product__col__img">
-          <img class="product__image" src="../img/watch.jpg">
-        </div>
-        
-        <div class="product__col">
-          
-            <div class="product__description">            
-              <h2 class = "product__title">Ótrúlegt úr</h2>
-              <p class="product__text">Hvað er Klukkan? Þetta úr mun svara því hvenær sem er.</p>
-            </div>
-
-            <div class="product__buy">
-              <p class="product__price">99.900 kr.-</p>      
-              <form class="product__form">
-                <p><label for="fjoldi">Fjöldi:</label></p>
-                <input type="text" id="fjoldi" placeholder="0">
-                <button><img src="../img/cart.svg">Uppfæra</button>
-                <button><img src="../img/cart.svg">Eyða úr körfu</button>
-              </form>
-            </div>
-          </div>
-     
-          </div>
-         
-         
+    <div class="product__row">
+      <div class="product__col__img">
+        <img class="product__image" src="../img/watch.jpg">
       </div>
+              
+      <div class="product__col__card">
+          <div class="product__description">            
+            <h2 class = "product__title">Ótrúlegt úr</h2>
+            <p class="product__text">Hvað er Klukkan? Þetta úr mun svara því hvenær sem er.</p>
+          </div>
 
-      <div class="product__row">
-        <div class="product__col__img">
-          <img class="product__image" src="../img/headphones.jpg">
-        </div>
-          
-        <div class="product__col">
+          <div class="product__buy">
+            <p class="product__price">99.900 kr.-</p>      
+            <form class="product__form">
+              <p><label for="fjoldi">Fjöldi:</label></p>
+              <input type="text" id="fjoldi" placeholder="0">
+              <button><img src="../img/cart.svg">Uppfæra</button>
+              <button><img src="../img/cart.svg">Eyða úr körfu</button>
+            </form>
+          </div>
+      </div>
+                    
+      <div class="product__col__img">
+        <img class="product__image" src="../img/headphones.jpg">
+      </div>
+               
+      <div class="product__col__card">
           <div class="product__description"> 
           <h2 class="product__title">Hágæða heyrnatól</h2>
           <p>Þú munt ekki heyra neitt nema hágæða tónlist með þessum hágæða heyrnartólum. Höfum við minnst á að þau eru hágæða?</p>
@@ -83,10 +76,8 @@
           </form>
         </div>
       </div>
-      </div>
-      
-      <div class="product__row">
-        <section class="product__col__shippay">
+     
+      <div class="product__col__shippay">
           <h2 class="product__title">Sendingarupplýsingar</h2>
           <form class="product__shippay">
             <div class="product__shippay__field">
@@ -97,15 +88,15 @@
               <label for="address">Heimilisfang:</label>
               <input type="text" id="address">
             </div>
-            <div class="product__shipbuy__field">
+            <div class="product__shippay__field">
               <label for="zipcode">Póstnúmer</label>
               <input type="number" id="zipcode" placeholder="-Velja póstnúmer-" min="101" 
               max="999" step="1">
             </div>
           </form>
-     </section>
-      
-     <section class="product__col__shipbuy">
+      </div>
+          
+      <div class="product__col__shippay">
       <h2 class="product__title">Greiðsluupplýsingar</h2>
       <form class="product__shippay">
         <div class="product__shippay__field">
@@ -122,15 +113,15 @@
           <div class="expiry__date">
             <label for="expirydate-month">Mán</label>
             <input type="number" id="expirydate-month" placeholder="1"  min="1" max="12" step="1">
-            <label for="expirydate-year">Gildistími</label>
+            <label for="expirydate-year">Ár</label>
             <input type="number" id="expirydate-year" placeholder="2018" min="2018" max="3000" step="1">
           </div>
         </div>
       </form>
-    </section>
-    <div class="product__row">
+      </div>
 
-  
+      <button class="product__col button--red button--middle">Kaupa</button>
+  </div>
 </main>
 
 
