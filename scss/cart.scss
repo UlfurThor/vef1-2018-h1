@@ -46,24 +46,24 @@
 
   &__image {
     width: 100%;
-    padding-right: 10px;
-    padding-left: 10px;
+    padding-right: $halfGutter;
+    padding-left: $halfGutter;
  
   }
 
   &__row {
     display: flex;
     flex-wrap:wrap;
-    margin-right: -10px;
+    margin-right: -$halfGutter;
     margin-bottom: 2*$gutter;
-    margin-left: -10px;
+    margin-left: -$halfGutter;
     // @media (min-width: 800px) {}
   }
 
   &__col {
     width: 100%;
-    padding-right: 10px;
-    padding-left: 10px;
+    padding-right: $halfGutter;
+    padding-left: $halfGutter;
 
     &__img {
       @media (min-width: 800px) {
@@ -72,8 +72,8 @@
     }
 
     &__card {
-      padding-right: 10px;
-      padding-left: 10px;
+      padding-right: $halfGutter;
+      padding-left: $halfGutter;
       display: flex;
       flex-direction: column;
       justify-content: space-between;
@@ -84,8 +84,8 @@
 
     &__shippay {
       width: $s12-col;
-      padding-right: 10px;
-      padding-left: 10px;
+      padding-right: $halfGutter;
+      padding-left: $halfGutter;
       @media (min-width: 800px) {
         width: $s6-col;
       }

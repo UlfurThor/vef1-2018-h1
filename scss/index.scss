@@ -7,31 +7,46 @@ main {
 .index_main {
 
   &__row {
-    margin-left: -10px;
-    margin-right: -10px;
+    margin-top: $gutter;
+    margin-bottom: $gutter;
+    margin-left: -$halfGutter;
+    margin-right: -$halfGutter;
     display: flex;
     flex-wrap: wrap;
 
     &__column {
-      padding-left: 10px;
-      padding-right: 10px;
+      padding-left: $halfGutter;
+      padding-right: $halfGutter;
       width: $s12-col;
 
       &__content {
-        margin-left: -10px;
-        margin-right: -10px;
+        margin-left: -$halfGutter;
+        margin-right: -$halfGutter;
         display: flex;
         flex-wrap: wrap;
 
         &.cont_rev {
           flex-direction: row-reverse;
-          //background-color: red;
+
+          .items_desc {
+            @media (min-width: 800px) {
+              padding-left: $gutter*2;
+            }
+
+          }
         }
 
         &__items {
-          padding-left: 10px;
-          padding-right: 10px;
+          padding-left: $halfGutter;
+          padding-right: $halfGutter;
           width: $s12-col;
+
+          margin-top: $gutter;
+          margin-bottom: $gutter;
+
+          &.items_desc {
+            align-self: center;
+          }
 
           @media (min-width: 800px) {
             width: $s6-col;
@@ -57,6 +72,18 @@ main {
           button:hover {
             color: $color-footerPink;
             background-color: $color-black;
+          }
+
+          p {
+            font-size: $f24;
+            margin-bottom: $f36;
+          }
+
+          h2 {
+            font-size: $f36;
+            font-weight: bold;
+            font-family: $heading-font-stack;
+            margin-bottom: $f36;
           }
         }
       }

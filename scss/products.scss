@@ -7,17 +7,19 @@ main {
 .products_main {
 
   &__row {
-    margin-left: -10px;
-    margin-right: -10px;
+    margin-left: -$halfGutter;
+    margin-right: -$halfGutter;
     display: flex;
     flex-wrap: wrap;
-    border: 1px solid black;
 
-    
+
     &__column {
-      padding-left: 10px;
-      padding-right: 10px;
+      padding-left: $halfGutter;
+      padding-right: $halfGutter;
       width: $s12-col;
+      align-items: stretch;
+      //height: 800px;
+      border: 1px solid black;
 
       @media (min-width: 800px) {
         width: $s6-col;
@@ -28,16 +30,16 @@ main {
       }
 
       &__content {
-        margin-left: -10px;
-        margin-right: -10px;
+        margin-left: -$halfGutter;
+        margin-right: -$halfGutter;
         display: flex;
         flex-direction: column;
 
 
         &__items {
 
-          padding-left: 10px;
-          padding-right: 10px;
+          padding-left: $halfGutter;
+          padding-right: $halfGutter;
 
 
           img {
@@ -48,12 +50,15 @@ main {
             margin-top: auto;
             display: flex;
             justify-content: space-between;
+            width: 100%;
+            align-self: auto;
+            border: 1px solid red;
 
             .how_many {
               display: flex;
               flex-direction: column;
               width: 60%;
-              margin-right: 10px;
+              margin-right: $halfGutter;
 
               input {
                 border: 1px solid black;
