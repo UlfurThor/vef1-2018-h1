@@ -1,5 +1,42 @@
+# Hópverkefni 1 
 
-# Hópverkefni 1
+## Hvernig á að keyra/byggja verkefnið 
+
+Skref 1: Sækja/installa [node.js](https://nodejs.org/en/) v10.
+
+Skref 2: Sækja verkenið á [Github](https://github.com/UlfurThor/vef1-2018-h1).
+
+
+
+Skref 3: Opna console í verkenis möppunni og keira `npm install` til að setja up node.js föllin.
+
+
+Skref 5: Keirið `npm run sass` til að byggja verkefnið (eða `npm run dev` til að byrja Browser-Synch og Sass hlustarann)
+
+Hægt er að nálgast tilbúið verkefnið í heimasvæði báðra nemenda verkenisins:  
+https://notendur.hi.is/~uth16/vefforritun/h1/  
+https://notendur.hi.is/~hro10/vefforritun/h1/
+
+## Uppsetning
+Verkenið inniheldur 4 síður, `index`(forsíða), `products`, `cart`, og `staff`.  
+Verkefnið inniheldur 4 html skjöl, eitt fyrir hverja síðu.  
+Eitt css skal, `styles.css`, sem inniheldur allt `.css` fyrir verkefnið.  
+`styles.css` er bygt eftir `styles.scss` í Sass, sem tekur inn `.scss` skrá fyrir hverja síðu, auk nokkra annara hjálpar skjala.
+
+## Nemendur
+Úlfur Þór Þráinsson: uth16@hi.is
+* header / footer
+* index
+* products
+
+Hjalti : hro10@hi.is
+* cart
+* staff
+
+---
+---
+---
+# Hópverkefni 1 - Kynning Kennara
 
 Verkefnið felst í því að smíða vef eftir forskrift.
 

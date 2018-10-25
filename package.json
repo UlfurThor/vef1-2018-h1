@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "browser-sync": "browser-sync start --server --files index.html headder-footer.html styles.css pages *.html",
-    "sass": "node-sass --source-map-embed styles.scss styles.css scss/*.scss -w",
+    "sass": "node-sass --source-map-embed styles.scss styles.css scss/*.scss ",
     "sass-watch": "node-sass --source-map-embed --watch --recursive styles.scss styles.css",
     "lint-css": "stylelint styles.css --syntax css",
     "lint-scss": "stylelint styles.scss --syntax scss",

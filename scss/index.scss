@@ -1,12 +1,12 @@
 @import "scss/config";
 
-main {
-  max-width: 1200px;
-}
 
 .index_main {
 
+  // main of products
+  // set to 1200px max-width in styles.scss main{}
   &__row {
+    //flexbox containing all cards in main
     margin-top: $gutter;
     margin-bottom: $gutter;
     margin-left: -$halfGutter;
@@ -15,17 +15,22 @@ main {
     flex-wrap: wrap;
 
     &__column {
+      //sets the width of each content group
+
       padding-left: $halfGutter;
       padding-right: $halfGutter;
       width: $s12-col;
 
       &__content {
+      // creates a flexbox for each group
         margin-left: -$halfGutter;
         margin-right: -$halfGutter;
         display: flex;
         flex-wrap: wrap;
 
         &.cont_rev {
+          // makes sure that you can reverse
+          //    the order of content
           flex-direction: row-reverse;
 
           .items_desc {
@@ -37,6 +42,7 @@ main {
         }
 
         &__items {
+          //sets the size of each item
           padding-left: $halfGutter;
           padding-right: $halfGutter;
           width: $s12-col;
@@ -59,7 +65,7 @@ main {
           button {
             width: 200px;
             max-width: 100%;
-            padding: $f14; //todo set pading
+            padding: $f14;
             background-color: $color-footerPink;
             border: 0px solid transparent;
             border-radius: 5px;
