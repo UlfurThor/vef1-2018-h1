@@ -14,8 +14,8 @@ Skref 3: Opna console í verkenis möppunni og keira `npm install` til að setja
 Skref 5: Keirið `npm run sass` til að byggja verkefnið (eða `npm run dev` til að byrja Browser-Synch og Sass hlustarann)
 
 Hægt er að nálgast tilbúið verkefnið í heimasvæði báðra nemenda verkenisins:  
-https://notendur.hi.is/~uth16/vefforritun/h1/  
-https://notendur.hi.is/~hro10/vefforritun/h1/
+notendur.hi.is/~uth16/vefforritun/h1/  
+notendur.hi.is/~hro10/vefforritun/hopverkefni1
 
 ## Uppsetning
 Verkenið inniheldur 4 síður, `index`(forsíða), `products`, `cart`, og `staff`.  
@@ -29,7 +29,7 @@ Eitt css skal, `styles.css`, sem inniheldur allt `.css` fyrir verkefnið.
 * index
 * products
 
-Hjalti : [hro10@hi.is](https://www.youtube.com/watch?v=jW0Vuh3PKUU)
+Hjalti Rúnar Ómarsson : [hro10@hi.is](https://www.youtube.com/watch?v=jW0Vuh3PKUU)
 * cart
 * staff
 
