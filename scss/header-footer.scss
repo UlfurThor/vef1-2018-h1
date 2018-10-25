@@ -24,23 +24,23 @@ header {
   &__links__rows {
     display: flex;
     flex-direction: column;
-    margin-left: -10px;
-    margin-right: -10px;
+    margin-left: -$halfGutter;
+    margin-right: -$halfGutter;
     background-color: orange;
   }
 
   &__row {
     display: flex;
     flex-direction: column;
-    margin-left: -10px;
-    margin-right: -10px;
+    margin-left: -$halfGutter;
+    margin-right: -$halfGutter;
     background-color: red;
   }
 
   &__col {
     width: 100%;
-    padding-right: 10px;
-    padding-left: 10px;
+    padding-right: $halfGutter;
+    padding-left: $halfGutter;
     background-color: orange;
   }
 
@@ -61,8 +61,8 @@ header {
   &__links {
     &__column {
       width: 100%;
-      padding-right: 10px;
-      padding-left: 10px;
+      padding-right: $halfGutter;
+      padding-left: $halfGutter;
       background-color: orchid;
       text-align: center;
     }
