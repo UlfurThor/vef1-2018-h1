@@ -24,12 +24,12 @@ Eitt css skal, `styles.css`, sem inniheldur allt `.css` fyrir verkefnið.
 `styles.css` er bygt eftir `styles.scss` í Sass, sem tekur inn `.scss` skrá fyrir hverja síðu, auk nokkra annara hjálpar skjala.
 
 ## Nemendur
-Úlfur Þór Þráinsson: uth16@hi.is
+Úlfur Þór Þráinsson: [uth16@hi.is](https://www.youtube.com/watch?v=dQw4w9WgXcQ)
 * header / footer
 * index
 * products
 
-Hjalti : hro10@hi.is
+Hjalti : [hro10@hi.is](https://www.youtube.com/watch?v=jW0Vuh3PKUU)
 * cart
 * staff
 
