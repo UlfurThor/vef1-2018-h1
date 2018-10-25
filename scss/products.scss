@@ -14,12 +14,14 @@ main {
 
 
     &__column {
+      padding: $gutter;
       padding-left: $halfGutter;
       padding-right: $halfGutter;
       width: $s12-col;
       align-items: stretch;
       //height: 800px;
-      border: 1px solid black;
+      //border: 1px solid black;
+
 
       @media (min-width: 800px) {
         width: $s6-col;
@@ -34,25 +36,61 @@ main {
         margin-right: -$halfGutter;
         display: flex;
         flex-direction: column;
-
-
+        
         &__items {
-
+          
+          padding: $halfGutter;
           padding-left: $halfGutter;
           padding-right: $halfGutter;
+          
+          //border: 1px solid green;
+          
+
+          &.img {
 
 
-          img {
-            max-width: 100%;
+            img {
+              max-width: 100%;
+            }
+
+            //border: 1px solid blue;
+          }
+
+          &.title {
+            font-size: $f36;
+            h2{
+              
+              font-size: $f36;
+              font-weight: bold;
+              font-family: $heading-font-stack;
+            }
+            @media (min-width: 800px) {
+              height: 2em;
+            }
+              
+          }
+
+          &.descr {
+            font-size: $f16;
+            @media (min-width: 800px) {
+              height: 4em;
+            }
+            
+          }
+
+          &.price {
+            font-size: $f24;
+            font-weight: bold;
+            font-family: $heading-font-stack;
           }
 
           &.form {
             margin-top: auto;
             display: flex;
-            justify-content: space-between;
+            //justify-content: space-between;
             width: 100%;
             align-self: auto;
-            border: 1px solid red;
+            //border: 1px solid red;
 
             .how_many {
               display: flex;
@@ -69,7 +107,9 @@ main {
               }
             }
 
+
             .prod_button {
+              font-size: $f24;
               display: flex;
               width: 30%;
 
