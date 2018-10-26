@@ -32,6 +32,12 @@
     @include title;
   }
 
+  &__description {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+  }
+
   &__price {
     @include price;
   }
@@ -51,6 +57,7 @@
 
     &__shippay {
       display: flex;
+      flex-wrap: wrap;
       justify-content: center;
     }
   }
@@ -68,6 +75,8 @@
 
     &__card {
       display: flex;
+      flex-wrap: wrap;
+      width: 100%;
       padding-right: $halfGutter;
       padding-left: $halfGutter;
       flex-direction: column;
@@ -78,7 +87,9 @@
     }
 
     &__shippay {
-      width: $s12-col;
+      display: flex;
+      flex-wrap: wrap;
+      align-content: center;
       padding-right: $halfGutter;
       padding-left: $halfGutter;
       @media (min-width: 700px) {
@@ -102,7 +113,6 @@
   width: 100%;
   margin-top: auto;
   justify-content: space-between;
-  align-self: auto;
 }
 
 .how_many__cart {
