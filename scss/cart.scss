@@ -106,47 +106,57 @@
 }
 
 .how_many__cart {
-  // flexbox containing the input and its lable
   display: flex;
-  width: 25%;
+  width: 20%;
   flex-direction: column;
   justify-content: space-between;
 }
 
-input {
+.product__input {
   height: 4em;
   padding: 0 $f14 0 $f14;
   border: 1px solid #000;
   border-radius: 5px;
 }
 
-.prod__button {
+.select {
+  height: 4em;
+  padding: 0 $f14 0 $halfGutter;
+  border: 1px solid #000;
+  border-radius: 5px;
+}
+
+.button__content {
   display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-right: $halfGutter;
+  padding-left: $halfGutter;
+}
+
+.button__text {
+  font-size: $f16;
+}
+
+.prod_button {
+  display: flex;
+  flex-display: wrap;
   width: 33%;
   font-size: $f24;
-    
-  .button {
-      margin-top: auto;
-      height: 4em;
-      width: 100%;
-      background-color: $color-white;
-      border: 1px solid #000;
-      border-radius: 5px;
-      transition: color 0.3s ease-in-out;
-      transition: background-color 0.3s ease-in-out;
-    }
-    
 
-    button:hover {
-      color: $color-black;
-      background-color: $color-footerPink;
-    }
+  .prod_button:hover {
+    color: $color-black;
+    background-color: $color-footerPink;
   }
+}
 
-  .products_main__row__column__cards__items {
-    //each item on a card
-    padding: $halfGutter;
-    padding-right: $halfGutter;
-    padding-left: $halfGutter;
-    
-  }
+.products_main__row__column__cards__items {
+  padding: $halfGutter;
+  padding-right: $halfGutter;
+  padding-left: $halfGutter;
+}
+
+.button__cart {
+  width: $f24;
+  height: $f24;
+}

@@ -23,7 +23,7 @@
             <a href="./staff.html" class="">STARFSFÓLK</a>
           </div>
           <div class="header__row__links__block hd__cart">
-            <a href="./cart.html" class="header__links_cart__link"><img src="../img/cart.svg" class="butt_img" alt="Oppna körfu"> Karfa
+            <a href="./cart.html" class="header__links_cart__link"><img src="../img/cart.svg" class="button__cart" alt="Oppna körfu"> Karfa
               (3)</a>
           </div>
         </div>
@@ -50,18 +50,18 @@
               <div class="products_main__row__column__cards__items form">
                   <div class="how_many__cart">
                     <label>Fjöldi</label>
-                    <input type="text" id="fjoldi" placeholder="1">
+                    <input class="product__input" type="text" id="fjoldi" placeholder="1">
                   </div>
                   <div class="prod_button">
-                    <button class="">
-                      <img src="../img/cart.svg" class="butt_img">
-                      Uppfæra
+                    <button class="button__content">
+                      <img src="../img/cart.svg" class="button__cart">
+                      <p class="button__text">Uppfæra</p>
                     </button>
                   </div>
                   <div class="prod_button">
-                      <button class="">
-                        <img src="../img/cart.svg" class="butt_img">
-                        Eyða
+                      <button class="button__content">
+                        <img src="../img/cart.svg" class="button__cart">
+                        <p class="button__text">Eyða úr körfu</p>
                       </button>
                     </div>
                 </div>
@@ -90,18 +90,18 @@
               <div class="products_main__row__column__cards__items form">
                   <div class="how_many__cart">
                       <label>Fjöldi</label>
-                      <input type="text" id="fjoldi" placeholder="1">
+                      <input class="product__input" type="text" id="fjoldi" placeholder="1">
                     </div>
                     <div class="prod_button">
-                        <button class="">
-                          <img src="../img/cart.svg" class="butt_img">
-                          Uppfæra
+                        <button class="button__content">
+                          <img src="../img/cart.svg" class="button__cart">
+                          <p class="button__text">Uppfæra</p>
                         </button>
                       </div>
                       <div class="prod_button">
-                          <button class="">
-                            <img src="../img/cart.svg" class="butt_img">
-                            Eyða
+                          <button class="button__content">
+                            <img src="../img/cart.svg" class="button__cart">
+                            <p class="button__text">Eyða úr körfu</p>
                           </button>
                         </div>
                     </div>
@@ -116,15 +116,15 @@
               <h2 class="product__title">Sendingarupplýsingar</h2>
             <div class="product__shippay__field">
               <label for="name">Nafn:</label>
-              <input class="button" type="text" id="name">
+              <input class="button product__input" type="text" id="name">
             </div>
             <div class="product__shippay__field">
               <label for="address">Heimilisfang:</label>
-              <input class="button" type="text" id="address">
+              <input class="button product__input" type="text" id="address">
             </div>
             <div class="product__shippay__field">
               <label for="zipcode">Póstnúmer</label>
-              <select  class="button" id="zipcode">
+              <select class="button select" id="zipcode">
                   <option>-Velja póstnúmer-</option>
                   <option>101 Reykjavík</option>
                   <option>103 Reykjavík</option>
@@ -319,18 +319,18 @@
           <h2 class="product__title">Greiðsluupplýsingar</h2>
         <div class="product__shippay__field">
           <label for="cardnumber">Kortanúmer</label>
-          <input class="button" type="text" id="cardnumber">
+          <input class="button product__input" type="text" id="cardnumber">
         </div>
         <div class="product__shippay__field">
           <label for="cardholder">Korthafi</label>
-          <input  class="button" type="text" id="cardholder">
+          <input  class="button product__input" type="text" id="cardholder">
         </div>
         <div class=product__shippay__field>
           <p>Gildistími</p>
 
           <div class="expiry__date">
             <label for="expirydate-month">Mán</label>
-            <select  class="button" id="zipcode"> 
+            <select class="button select" id="zipcode"> 
               <option>1</option>
               <option>2</option>
               <option>3</option>
@@ -345,7 +345,7 @@
               <option>12</option>
             </select>
             <label for="expirydate-year">Ár</label>
-            <select class="button" id="expirydate-year">
+            <select class="button select" id="expirydate-year">
               <option>2018</option>
               <option>2019</option>
               <option>2020</option>
