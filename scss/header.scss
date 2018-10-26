@@ -5,37 +5,37 @@ header {
 }
 
 .header {
-  margin: 0 auto;
+  max-width: 1200px;
   padding-top: 1em;
+  padding-right: $gutter;
   padding-bottom: 1em;
   padding-left: $gutter;
-  padding-right: $gutter;
-  max-width: 1200px;
+  margin: 0 auto;
 
   @media (min-width: 1200px) {
-    padding-left: 0;
     padding-right: 0;
+    padding-left: 0;
   }
 
   &__row {
     display: flex;
-    flex-direction: column;
     justify-content: center;
-    margin-left: -$halfGutter;
     margin-right: -$halfGutter;
+    margin-left: -$halfGutter;
+    flex-direction: column;
 
     &__title {
-      padding-left: $halfGutter;
       padding-right: $halfGutter;
+      padding-left: $halfGutter;
       font-family: $heading-font-stack;
-      text-align: center;
       font-size: $f60;
+      text-align: center;
     }
 
     &__links {
-      padding-left: $halfGutter;
-      padding-right: $halfGutter;
       display: flex;
+      padding-right: $halfGutter;
+      padding-left: $halfGutter;
       flex-direction: column;
 
       @media (min-width: 800px) {
@@ -74,17 +74,17 @@ header {
 
         &.hd__pages {
           display: flex;
+          font-weight: 1000;
+          text-decoration: none;
           flex-direction: row;
           justify-content: space-around;
-          text-decoration: none;
-          font-weight: 1000;
 
           @media (max-width: 400px) {
             // dirty litle trico to make sure
             // that the text does not flow
             // of the page under 400px
-            flex-direction: column;
             text-align: center;
+            flex-direction: column;
           }
 
           @media (min-width: 800px) {
@@ -105,10 +105,9 @@ header {
 
         &.hd__cart {
           display: flex;
-          flex-direction: row;
-          justify-content: center;
-
           font-weight: 200;
+          flex-direction: row;
+          justify-content: center;       
 
           @media (min-width: 800px) {
             justify-content: flex-end;
@@ -118,7 +117,6 @@ header {
             width: 1em;
             width: 1em;
           }
-
 
         }
 

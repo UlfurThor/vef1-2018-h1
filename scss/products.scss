@@ -6,22 +6,20 @@
   // set to 1200px max-width in styles.scss main{}
   &__row {
     //flexbox containing all cards in main
-    margin-left: -$halfGutter;
-    margin-right: -$halfGutter;
     display: flex;
-    flex-wrap: wrap;
     padding-top: $gutter;
     padding-bottom: $gutter;
+    margin-right: -$halfGutter;
+    margin-left: -$halfGutter;
+    flex-wrap: wrap;
 
     &__column {
       //sets width of each card
-      padding: $halfGutter;
-      padding-left: $halfGutter;
-      padding-right: $halfGutter;
       width: $s12-col;
+      padding: $halfGutter;
+      padding-right: $halfGutter;
+      padding-left: $halfGutter;
       align-items: stretch;
-
-
 
       @media (min-width: 800px) {
         width: $s6-col;
@@ -32,18 +30,18 @@
       }
 
       &__cards {
-        // ads a flexbox to each 
+        // ads a flexbox to each
         //    card contaning items
-        margin-left: -$halfGutter;
-        margin-right: -$halfGutter;
         display: flex;
+        margin-right: -$halfGutter;
+        margin-left: -$halfGutter;
         flex-direction: column;
 
         &__items {
           //each item on a card
           padding: $halfGutter;
-          padding-left: $halfGutter;
           padding-right: $halfGutter;
+          padding-left: $halfGutter;
 
           &.img {
 
@@ -58,9 +56,9 @@
             font-size: $f36;
 
             h2 {
+              font-family: $heading-font-stack;
               font-size: $f36;
               font-weight: bold;
-              font-family: $heading-font-stack;
             }
 
             @media (min-width: 800px) {
@@ -74,7 +72,7 @@
             font-size: $f16;
 
             @media (min-width: 800px) {
-              // makes sure each card has 
+              // makes sure each card has
               //    enough space to contain all the text
               height: 7em;
             }
@@ -83,31 +81,31 @@
 
           &.price {
             // configures the price on a card
+            font-family: $heading-font-stack;
             font-size: $f24;
             font-weight: bold;
-            font-family: $heading-font-stack;
           }
 
           &.form {
             // configures the input form on a card
             // uses a flexbox to maintain sizeing
-            margin-top: auto;
             display: flex;
-            justify-content: space-between;
             width: 100%;
+            margin-top: auto;
+            justify-content: space-between;
             align-self: auto;
 
             .how_many {
               // flexbox containing the input and its lable
               display: flex;
-              flex-direction: column;
               width: 63%;
-              
+              flex-direction: column;
+
               input {
-                border: 1px solid black;
-                border-radius: 5px;
                 height: 4em;
                 padding: 0 $f14 0 $f14;
+                border: 1px solid #000;
+                border-radius: 5px;
               }
             }
 
@@ -115,21 +113,17 @@
             .prod_button {
               // flexbox containing the button
               // makes sure the button is on the bottom
-              
-              font-size: $f24;
               display: flex;
               width: 33%;
-
+              font-size: $f24;
 
               button {
-                margin-top: auto;
-                height: 4em;
-
                 width: 100%;
+                height: 4em;
+                margin-top: auto;
                 background-color: $color-white;
-                border: 1px solid black;
+                border: 1px solid #000;
                 border-radius: 5px;
-
 
                 transition: color 0.3s ease-in-out;
                 transition: background-color 0.3s ease-in-out;
@@ -148,12 +142,10 @@
               }
             }
 
-
           }
         }
       }
     }
   }
-
 
 }

@@ -6,40 +6,36 @@ footer {
   padding-top: $f16;
   padding-bottom: $f16;
   background-color: $color-footerPink;
-  
 }
 
 .footer {
-  margin: 0 auto;
+  max-width: 1200px;
   padding-top: 1em;
+  padding-right: $gutter;
   padding-bottom: 1em;
   padding-left: $gutter;
-  padding-right: $gutter;
-  max-width: 1200px;
+  margin: 0 auto;
 
   @media (min-width: 1200px) {
-    padding-left: 0;
     padding-right: 0;
+    padding-left: 0;
   }
 
   &__row {
-    margin-left: -$halfGutter;
-    margin-right: -$halfGutter;
     display: flex;
+    margin-right: -$halfGutter;
+    margin-left: -$halfGutter;
     flex-wrap: wrap;
 
     font-weight: bold;
 
     &__column {
-
-      padding-left: $halfGutter;
-      padding-right: $halfGutter;
-      width: $s6-col;
-
       display: flex;
-      flex-direction: column;
+      width: $s6-col;    
+      padding-right: $halfGutter;
+      padding-left: $halfGutter;
       line-height: 2em;
-
+      flex-direction: column;
       @media (min-width: 1000px) {
         width: $s3-col;
       }

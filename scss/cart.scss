@@ -1,6 +1,5 @@
 @import "scss/config";
 
-
 @mixin title {
   margin-bottom: $gutter;
   font-family: $heading-font-stack;
@@ -15,21 +14,14 @@
   font-weight: 700;
 }
 
-.button--middle {
-
-}
-
 .product {
   max-width: 1200px;
 
   &__shippay {
-    display:flex;
+    display: flex;
     flex-direction: column;
-    
-    
-    
+
     &__field {
-      
       display: flex;
       padding-top: $gutter;
       margin-bottom: $gutter;
@@ -40,6 +32,7 @@
   &__title {
     @include title;
   }
+
   &__price {
     @include price;
   }
@@ -48,12 +41,11 @@
     width: 100%;
     padding-right: $halfGutter;
     padding-left: $halfGutter;
- 
   }
 
   &__row {
     display: flex;
-    flex-wrap:wrap;
+    flex-wrap: wrap;
     margin-right: -$halfGutter;
     margin-bottom: 2*$gutter;
     margin-left: -$halfGutter;
@@ -72,9 +64,9 @@
     }
 
     &__card {
+      display: flex;
       padding-right: $halfGutter;
       padding-left: $halfGutter;
-      display: flex;
       flex-direction: column;
       justify-content: space-between;
       @media (min-width: 800px) {
@@ -90,59 +82,44 @@
         width: $s6-col;
       }
     }
-
-    
   }
 }
 
+.form {
+  display: flex;
+  width: 100%;
+  margin-top: auto;
+  justify-content: flex-start;
+  align-self: auto; 
+}
 
+.how_many {
+  // flexbox containing the input and its lable
+  display: flex;
+  width: 30%;
+  flex-direction: column;
+  justify-content: space-between;
+}
 
-  .form {
-    // configures the input form on a card
-    // uses a flexbox to maintain sizeing
-    margin-top: auto;
-    display: flex;
-    justify-content: flex-start;
-    width: 100%;
-    align-self: auto;
+input {
+  height: 4em;
+  padding: 0 $f14 0 $f14;
+  border: 1px solid #000;
+  border-radius: 5px;
+}
 
-    .how_many {
-      // flexbox containing the input and its lable
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      width: 30%;
-      
-      input {
-        border: 1px solid black;
-        border-radius: 5px;
-        height: 4em;
-        padding: 0 $f14 0 $f14;
-      }
-    }
-
-  }
-
-  .prod__button {
-    // flexbox containing the button
-    // makes sure the button is on the bottom
+.prod__button {
+  display: flex;
+  width: 33%;
+  font-size: $f24;
     
-    font-size: $f24;
-    display: flex;
-    width: 33%;
-    
-  
-  
-    .button {
+  .button {
       margin-top: auto;
       height: 4em;
       width: 100%;
       background-color: $color-white;
-      border: 1px solid black;
+      border: 1px solid #000;
       border-radius: 5px;
-      
-  
-  
       transition: color 0.3s ease-in-out;
       transition: background-color 0.3s ease-in-out;
   
@@ -155,8 +132,6 @@
   
   
     .butt_img {
-  
-  
       width: 1em;
       height: 1em;
     }
@@ -165,9 +140,7 @@
   .products_main__row__column__cards__items {
     //each item on a card
     padding: $halfGutter;
-    padding-left: $halfGutter;
     padding-right: $halfGutter;
+    padding-left: $halfGutter;
+    
   }
-
-
-  

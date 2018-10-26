@@ -1,22 +1,17 @@
 @import "scss/config";
 
-
-
 h1 {
-  text-align: center;
   margin: 20px 0;
+  text-align: center;
   background-color: blue;
 }
 
-
-
-
 header {
-  margin: 0 auto;
   padding-top: 1rem;
+  padding-right: 20px;
   padding-bottom: 1rem;
   padding-left: 20px;
-  padding-right: 20px;
+  margin: 0 auto;
   background-color: $color-headerGreen;
 }
 
@@ -24,16 +19,16 @@ header {
   &__links__rows {
     display: flex;
     flex-direction: column;
-    margin-left: -$halfGutter;
     margin-right: -$halfGutter;
+    margin-left: -$halfGutter;
     background-color: orange;
   }
 
   &__row {
     display: flex;
     flex-direction: column;
-    margin-left: -$halfGutter;
     margin-right: -$halfGutter;
+    margin-left: -$halfGutter;
     background-color: red;
   }
 
@@ -55,7 +50,7 @@ header {
 
   &__spacer {
     //height: $halfGutter;
-    background-color: black;
+    background-color: #000;;
   }
 
   &__links {
@@ -63,12 +58,11 @@ header {
       width: 100%;
       padding-right: $halfGutter;
       padding-left: $halfGutter;
-      background-color: orchid;
       text-align: center;
+      background-color: orchid;
     }
   }
 }
-
 
 footer {
 

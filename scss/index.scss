@@ -1,31 +1,29 @@
 @import "scss/config";
 
-
 .index_main {
 
   // main of products
   // set to 1200px max-width in styles.scss main{}
   &__row {
     //flexbox containing all cards in main
+    display: flex;
     margin-top: $gutter;
+    margin-right: -$halfGutter;
     margin-bottom: $gutter;
     margin-left: -$halfGutter;
-    margin-right: -$halfGutter;
-    display: flex;
     flex-wrap: wrap;
 
     &__column {
       //sets the width of each content group
-
-      padding-left: $halfGutter;
-      padding-right: $halfGutter;
       width: $s12-col;
+      padding-right: $halfGutter;
+      padding-left: $halfGutter;
 
       &__content {
-      // creates a flexbox for each group
-        margin-left: -$halfGutter;
-        margin-right: -$halfGutter;
+        // creates a flexbox for each group
         display: flex;
+        margin-right: -$halfGutter;
+        margin-left: -$halfGutter;
         flex-wrap: wrap;
 
         &.cont_rev {
@@ -43,10 +41,9 @@
 
         &__items {
           //sets the size of each item
-          padding-left: $halfGutter;
-          padding-right: $halfGutter;
           width: $s12-col;
-
+          padding-right: $halfGutter;
+          padding-left: $halfGutter;
           margin-top: $gutter;
           margin-bottom: $gutter;
 
@@ -81,20 +78,19 @@
           }
 
           p {
-            font-size: $f24;
             margin-bottom: $f36;
+            font-size: $f24;
           }
 
           h2 {
+            margin-bottom: $f36;
+            font-family: $heading-font-stack;
             font-size: $f36;
             font-weight: bold;
-            font-family: $heading-font-stack;
-            margin-bottom: $f36;
+
           }
         }
       }
     }
   }
-
-
 }
