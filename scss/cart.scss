@@ -94,3 +94,80 @@
     
   }
 }
+
+
+
+  .form {
+    // configures the input form on a card
+    // uses a flexbox to maintain sizeing
+    margin-top: auto;
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    align-self: auto;
+
+    .how_many {
+      // flexbox containing the input and its lable
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      width: 30%;
+      
+      input {
+        border: 1px solid black;
+        border-radius: 5px;
+        height: 4em;
+        padding: 0 $f14 0 $f14;
+      }
+    }
+
+  }
+
+  .prod__button {
+    // flexbox containing the button
+    // makes sure the button is on the bottom
+    
+    font-size: $f24;
+    display: flex;
+    width: 33%;
+    
+  
+  
+    .button {
+      margin-top: auto;
+      height: 4em;
+      width: 100%;
+      background-color: $color-white;
+      border: 1px solid black;
+      border-radius: 5px;
+      
+  
+  
+      transition: color 0.3s ease-in-out;
+      transition: background-color 0.3s ease-in-out;
+  
+    }
+  
+    button:hover {
+      color: $color-black;
+      background-color: $color-footerPink;
+    }
+  
+  
+    .butt_img {
+  
+  
+      width: 1em;
+      height: 1em;
+    }
+  }
+
+  .products_main__row__column__cards__items {
+    //each item on a card
+    padding: $halfGutter;
+    padding-left: $halfGutter;
+    padding-right: $halfGutter;
+  }
+
+
+  
