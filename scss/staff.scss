@@ -1,9 +1,7 @@
- @import "scss/config";
-
+@import "scss/config";
 
 .staff {
-
-  &__container:hover &__card{
+  &__container:hover &__card {
     transform: rotateY(180deg);
   }
 
@@ -13,47 +11,34 @@
   }
 
   &__title {
-   margin-bottom: $gutter;
-   font-family: $heading-font-stack;
-   font-size: $f36;
-  }
-
-  &__container{
-    
+    margin-bottom: $gutter;
+    font-family: $heading-font-stack;
+    font-size: $f36;
   }
 
   &__col {
-    padding-left: $halfGutter;
-    padding-right: $halfGutter;
     width: $s12-col;
+    padding-right: $halfGutter;
+    padding-left: $halfGutter;
     @media (min-width: 800px) {
-      width:$s6-col;
+      width: $s6-col;
     }
-    
-   
   }
 
   &__text {
-    font-size:$f21;
+    font-size: $f21;
   }
 
   &__row {
     display: flex;
-    flex-wrap:wrap;
-    margin-left: -$halfGutter;
+    flex-wrap: wrap;
     margin-right: -$halfGutter;
-    
-     
-      
-
-  
+    margin-left: -$halfGutter;
   }
 
   &__img {
     width: 100%;
-    
-    }
-
+  }
 
   &__card {
     display: flex;
@@ -61,31 +46,23 @@
     justify-content: center;
     padding-top: $gutter;
     padding-bottom: $gutter;
+    transition: transform 0.3s ease-in-out;
     transform-style: preserve-3d;
-    transition: transform 0.3s ease-in-out; 
     backface-visibility: hidden;
   }
-  
 
   &__face {
-    
     backface-visibility: hidden;
     position: absolute;
-      width: 100%;
-      height: 100%;
+    width: 100%;
+    height: 100%;
   }
 
   &__back {
-         
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      transform: rotateY(180deg); /* sjáum ekki bakhliðina strax */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transform: rotateY(180deg);
   }
-  
-
-
 }
-
-

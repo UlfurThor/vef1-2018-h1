@@ -1,17 +1,9 @@
 .button {
-  
-  border: 1px solid black;
-  border-radius: 4px;
   height: 1.5*$gutter;
+  margin-bottom: $gutter;
   font-family: $body-font-stack;
-  margin-bottom:$gutter;
- 
- 
-}
-
-.button--cart {
-  // max-height:$f16;
- 
+  border: 1px solid #000;
+  border-radius: 4px;
 }
 
 .button--red {
@@ -19,7 +11,7 @@
   max-width: 100%;
   padding: $f14; //todo set pading
   background-color: $color-footerPink;
-  border: 0px solid transparent;
+  border: 0 solid transparent;
   border-radius: 5px;
 
   transition: color 0.3s ease-in-out;

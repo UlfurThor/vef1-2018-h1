@@ -22,17 +22,15 @@ $s3-col: $s12-col/4;
 $s2-col: $s12-col/6;
 $s1-col: $s12-col/12;
 
-
-
 // color setings
 $color-headerGreen: #afb281;
 $color-footerPink: #cc9694;
-$color-black:#000000;
-$color-white:#ffffff;
+$color-black:#000;
+$color-white:#fff;
 $color-blue:#cee8ff;
 $color-yelow:#fcffd2;
 
 // fonts
-@import url('https://fonts.googleapis.com/css?family=Open+Sans|Oswald:400,700');
-$body-font-stack:    'Open Sans', helvetica, arial, sans-serif;
-$heading-font-stack:    'Oswald', Verdana, serif;
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Oswald:400,700");
+$body-font-stack:    "Open Sans", helvetica, arial, sans-serif;
+$heading-font-stack: "Oswald", Verdana, serif;
