@@ -8,17 +8,17 @@ Skref 2: Sækja verkenið á [Github](https://github.com/UlfurThor/vef1-2018-h1)
 
 
 
-Skref 3: Opna console í verkenis möppunni og keira `npm install` til að setja up node.js föllin.
+Skref 3: Opna console í verkefnis möppunni og keyra `npm install` til að setja up node.js föllin.
 
 
-Skref 5: Keirið `npm run sass` til að byggja verkefnið (eða `npm run dev` til að byrja Browser-Synch og Sass hlustarann)
+Skref 5: Keyrið `npm run sass` til að byggja verkefnið (eða `npm run dev` til að byrja Browser-Synch og Sass hlustarann)
 
-Hægt er að nálgast tilbúið verkefnið í heimasvæði báðra nemenda verkenisins:  
+Hægt er að nálgast tilbúið verkefnið í heimasvæði beggja nemenda verkefnisins:  
 notendur.hi.is/~uth16/vefforritun/h1/  
 notendur.hi.is/~hro10/vefforritun/hopverkefni1
 
 ## Uppsetning
-Verkenið inniheldur 4 síður, `index`(forsíða), `products`, `cart`, og `staff`.  
+Verkefnið inniheldur 4 síður, `index`(forsíða), `products`, `cart`, og `staff`.  
 Verkefnið inniheldur 4 html skjöl, eitt fyrir hverja síðu.  
 Eitt css skal, `styles.css`, sem inniheldur allt `.css` fyrir verkefnið.  
 `styles.css` er bygt eftir `styles.scss` í Sass, sem tekur inn `.scss` skrá fyrir hverja síðu, auk nokkra annara hjálpar skjala.
