@@ -48,7 +48,7 @@
               <div class="product__buy">
               <p class="product__price">99.900 kr.-</p>
               <div class="products_main__row__column__cards__items form">
-                  <div class="how_many">
+                  <div class="how_many__cart">
                     <label>Fjöldi</label>
                     <input type="text" id="fjoldi" placeholder="1">
                   </div>
@@ -88,7 +88,7 @@
               <p class="product__price">39.900 kr-</p>
           
               <div class="products_main__row__column__cards__items form">
-                  <div class="how_many">
+                  <div class="how_many__cart">
                       <label>Fjöldi</label>
                       <input type="text" id="fjoldi" placeholder="1">
                     </div>
@@ -109,9 +109,11 @@
             </div>
           </div>
         </div>
+
+    <div class="product__row__shippay">
       <div class="product__col__shippay">
-          <h2 class="product__title">Sendingarupplýsingar</h2>
           <form class="product__shippay">
+              <h2 class="product__title">Sendingarupplýsingar</h2>
             <div class="product__shippay__field">
               <label for="name">Nafn:</label>
               <input class="button" type="text" id="name">
@@ -312,8 +314,9 @@
       </div>
           
       <div class="product__col__shippay">
-      <h2 class="product__title">Greiðsluupplýsingar</h2>
+      
       <form class="product__shippay">
+          <h2 class="product__title">Greiðsluupplýsingar</h2>
         <div class="product__shippay__field">
           <label for="cardnumber">Kortanúmer</label>
           <input class="button" type="text" id="cardnumber">
@@ -327,15 +330,40 @@
 
           <div class="expiry__date">
             <label for="expirydate-month">Mán</label>
-            <input  class="button"type="number" id="expirydate-month" placeholder="1"  min="1" max="12" step="1">
+            <select  class="button" id="zipcode"> 
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+              <option>5</option>
+              <option>6</option>
+              <option>7</option>
+              <option>8</option>
+              <option>9</option>
+              <option>10</option>
+              <option>11</option>
+              <option>12</option>
+            </select>
             <label for="expirydate-year">Ár</label>
-            <input class="button" type="number" id="expirydate-year" placeholder="2018" min="2018" max="3000" step="1">
+            <select class="button" id="expirydate-year">
+              <option>2018</option>
+              <option>2019</option>
+              <option>2020</option>
+              <option>2021</option>
+              <option>2022</option>
+              <option>2023</option>
+              <option>2024</option>
+              <option>2025</option>
+              <option>2026</option>
+            </select>
           </div>
         </div>
       </form>
       </div>
-
-      <button class="product__col button--red ">Kaupa</button>
+    </div>
+      <div class="buy__button">
+      <button class="button--red ">Kaupa</button>
+      </div>
   </div>
 </main>
 
